@@ -1,0 +1,8 @@
+[Junos_router]
+junos1 ansible_host=YOUR_ROUTER_ADDRESS
+
+[Junos_router:vars]
+ansible_connection=ansible.netcommon.netconf
+ansible_network_os=junipernetworks.junos.junos
+ansible_user=YOUR_USERNAME
+ansible_password=YOUR_PASSWORD

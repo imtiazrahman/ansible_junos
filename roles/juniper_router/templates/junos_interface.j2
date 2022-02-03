@@ -1,0 +1,4 @@
+set interfaces {{ item.interface_name }} description {{ item.interface_desc }}
+set interfaces {{ item.interface_name }} unit {{ item.interface_unit }} family inet address {{ item.interface_ipv4_add }}
+set interfaces {{ item.interface_name }} unit {{ item.interface_unit }} family inet6 address {{ item.interface_ipv6_add }}
+

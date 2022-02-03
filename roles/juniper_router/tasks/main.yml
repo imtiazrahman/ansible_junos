@@ -1,0 +1,10 @@
+---
+# tasks file for juniper_router
+
+- name: load configure file into device
+  junipernetworks.junos.junos_config:
+    src: junos_interface.j2 
+    comment: update config
+  with_items:
+    - "{{ juniper_vars }}"
+

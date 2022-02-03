@@ -1,0 +1,10 @@
+---
+
+- name: Get Device Facts
+  hosts: Junos_router
+  connection: ansible.netcommon.netconf
+  gather_facts: no
+
+  roles:
+   - juniper_router 
+
